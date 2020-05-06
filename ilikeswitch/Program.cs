@@ -11,32 +11,18 @@ namespace ilikeswitch
         static void Main(string[] args)
         {
             Console.Write("학년을 입력하세요: ");
-            int input = int.Parse(Console.ReadLine());
-            switch (input)
+            int level = int.Parse(Console.ReadLine());
+            switch (level)
             {
-                case 12:
                 case 1:
-                case 2:
-                    Console.WriteLine("겨울입니다");
+                    Console.WriteLine("수강해야 하는 전공 학점: 12학점");
                     break;
                 case 3:
+                    Console.WriteLine("수강해야 하는 전공 학점: 10학점");
+                    break;
+                case 2:
                 case 4:
-                case 5:
-                    Console.WriteLine("봄입니다");
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    Console.WriteLine("여름입니다");
-                    break;
-
-                case 9:
-                case 10:
-                case 11:
-                    Console.WriteLine("가을입니다");
-                    break;
-                default:
-                    Console.WriteLine("잘못 입력했습니다");
+                    Console.WriteLine("수강해야 하는 전공 학점: 18학점");
                     break;
             }
         }
